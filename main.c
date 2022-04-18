@@ -89,20 +89,25 @@ int main() {
 	*	Gets the shortest duration path with "GetShortPathJob"
 	*	Shows the resulting list with "ShowOperations"
 	*/
-	/*
-	op = GetShortPathJob(listjob, "pr1.2");
-	ShowOperations(op);
-	*/
+	//op = GetShortPathJob(listjob, "pr1.2");
+	//ShowOperations(op);
+	
 
 	/** Test of the path with longest duration
 	*	Gets the longest duration path with "GetLongPathJob"
 	*	Shows the resulting list with "ShowOperations"
 	*/
-	/* 
-	op = GetLongPathJob(listjob, "pr1.2");
-	ShowOperations(op);
-	*/
+	//op = GetLongPathJob(listjob, "pr1.2");
+	//ShowOperations(op);
 
+	/** Test of the removal of an operation
+	*	Removes the operation by giving the identifier "RemoveOperation"
+	*	Shows the resulting list with "ShowOperations"
+	*/
+	//op = GetLongPathJob(listjob, "pr1.2");
+	//op = RemoveOperation(op, 1);
+	//ShowOperations(op);
+	
 	getchar();
 
 	//return(0);

@@ -41,6 +41,7 @@ ListOperations* InsertListOperations(ListOperations* list, Operation* op);
 ListOperations* GetShortPathJob(ListJob* list, char* id);
 ListOperations* GetLongPathJob(ListJob* list, char* id);
 void ShowOperations(ListOperations* h);
+ListOperations* RemoveOperation(ListOperations* list, int id);
 
 /**/
 Job* CreateJob(char* id);
