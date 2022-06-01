@@ -218,3 +218,59 @@ ListOperations* RemoveOperation(ListOperations* list, int id)
 	}
 	return list;
 }
+
+
+ListOperations* GetMeanPathJob(ListJob* list, char* id)
+{
+	int i = 7;
+	ListJob* l = list;
+	Operation* aux = NULL; // Using aux->machine has a counter and aux->duration has the mean of each operation
+	ListOperations* lOp = NULL;
+
+	if (l != NULL)
+	{
+		if (strcmp(l->job.id, id) == 0)
+		{
+			ListOperations* op = l->operations;
+			while (op != NULL)
+			{
+				if (op->operation.id == i)
+				{
+					if (aux == NULL)
+					{
+						//printf("%d", i);
+						aux = CreateOperation(op->operation.id, 1, op->operation.duration);
+						
+						op = op->next;
+					}
+					else
+					{
+						aux->duration += op->operation.duration;
+						aux->machine += 1;
+						op = op->next;
+					}
+				}
+				else if (aux == NULL)
+				{
+					i--;
+				}
+				else
+				{
+					aux->duration = aux->duration / aux->machine;
+					lOp = InsertListOperations(lOp, aux);
+					i--;
+					//printf("%d", aux->id);
+					aux = NULL;
+				}
+
+			}
+			if (aux != NULL)
+			{
+				lOp = InsertListOperations(lOp, aux);
+				aux = NULL;
+			}
+		}
+		else { l = l->next; }
+	}
+	return lOp;
+}

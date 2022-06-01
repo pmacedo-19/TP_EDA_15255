@@ -100,6 +100,13 @@ int main() {
 	//op = GetLongPathJob(listjob, "pr1.2");
 	//ShowOperations(op);
 
+	/** Test of the mean for each operation in a job
+	*	Gets the mean for each operation in a selected job
+	*	Shows the resulting list with "ShowOperations" --- Discard machine id (not relevant in this case)
+	*/
+	op = GetMeanPathJob(listjob, "pr1.2");
+	ShowOperations(op);
+
 	/** Test of the removal of an operation
 	*	Removes the operation by giving the identifier "RemoveOperation"
 	*	Shows the resulting list with "ShowOperations"
