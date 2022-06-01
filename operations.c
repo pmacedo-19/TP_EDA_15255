@@ -274,3 +274,37 @@ ListOperations* GetMeanPathJob(ListJob* list, char* id)
 	}
 	return lOp;
 }
+
+
+void WriteOpFile(char filename[], ListOperations* job)
+{
+	ListOperations* temp = job;
+
+	FILE* file;
+	file = fopen(filename, "wb");
+	if (file == NULL)
+	{
+		fprintf(stderr, "\nCouldn't Open File'\n");
+		exit(1);
+	}
+
+	// writing all the nodes of the linked list to the file
+	while (temp != NULL)
+	{
+		fprintf(file,"\nOperation: %d\nMachine: %d\nDuration: %d\n", temp->operation.id, temp->operation.machine, temp->operation.duration);
+		temp = temp->next;
+	}
+
+	// Final status feedback
+	if (fwrite != 0)
+	{
+		printf("List stored successfully\n");
+	}
+	else
+	{
+		printf("Error While Writing\n");
+	}
+
+	fclose(file);
+}
+

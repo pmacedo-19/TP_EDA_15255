@@ -1,0 +1,16 @@
+
+Operation: 1
+Machine: 3
+Duration: 5
+
+Operation: 2
+Machine: 4
+Duration: 5
+
+Operation: 3
+Machine: 5
+Duration: 6
+
+Operation: 4
+Machine: 8
+Duration: 9

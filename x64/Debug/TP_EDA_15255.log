@@ -1,6 +1,2 @@
-﻿  job.c
-  main.c
-C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\main.c(20,9): warning C4013: 'getche' undefined; assuming extern returning int
-  operations.c
-  Generating Code...
+﻿  operations.c
   TP_EDA_15255.vcxproj -> C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\x64\Debug\TP_EDA_15255.exe

@@ -43,6 +43,9 @@ ListOperations* GetLongPathJob(ListJob* list, char* id);
 void ShowOperations(ListOperations* h);
 ListOperations* RemoveOperation(ListOperations* list, int id);
 ListOperations* GetMeanPathJob(ListJob* list, char* id);
+void WriteOpFile(char filename[], ListOperations* job);
+
+void WriteFile(char filename[], ListOperations* job);
 
 /**/
 Job* CreateJob(char* id);
