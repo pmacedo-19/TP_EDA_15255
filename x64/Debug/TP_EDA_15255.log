@@ -1,7 +1,22 @@
 ﻿  job.c
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(161,9): warning C4013: 'getche' undefined; assuming extern returning int
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(162,13): warning C4047: 'return': 'ListJob *' differs in levels of indirection from 'int'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(172,14): warning C4047: 'function': 'char *' differs in levels of indirection from 'char *[5]'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(172,11): warning C4024: 'strcpy': different types for formal and actual parameter 1
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(193,31): warning C4047: 'function': 'char *' differs in levels of indirection from 'char *[5]'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(193,28): warning C4024: 'CreateJob': different types for formal and actual parameter 1
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(196,52): warning C4047: 'function': 'char *' differs in levels of indirection from 'char *[5]'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(196,49): warning C4024: 'InsertOperationJob': different types for formal and actual parameter 3
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(201,41): warning C4047: 'function': 'char *' differs in levels of indirection from 'char *[5]'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(201,38): warning C4024: 'SearchJob': different types for formal and actual parameter 2
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(203,31): warning C4047: 'function': 'const char *' differs in levels of indirection from 'char *[5]'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(203,28): warning C4024: 'strcmp': different types for formal and actual parameter 2
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(206,53): warning C4047: 'function': 'char *' differs in levels of indirection from 'char *[5]'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(206,50): warning C4024: 'InsertOperationJob': different types for formal and actual parameter 3
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(211,32): warning C4047: 'function': 'char *' differs in levels of indirection from 'char *[5]'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(211,29): warning C4024: 'CreateJob': different types for formal and actual parameter 1
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(214,53): warning C4047: 'function': 'char *' differs in levels of indirection from 'char *[5]'
+C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\job.c(214,50): warning C4024: 'InsertOperationJob': different types for formal and actual parameter 3
   main.c
-C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\main.c(20,9): warning C4013: 'getche' undefined; assuming extern returning int
-  operations.c
   Generating Code...
-  LINK : C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\x64\Debug\TP_EDA_15255.exe not found or not built by the last incremental link; performing full link
   TP_EDA_15255.vcxproj -> C:\Users\User\Desktop\LESI 3º Ano - 2s\EDA\TP_EDA\TP_EDA_15255\x64\Debug\TP_EDA_15255.exe

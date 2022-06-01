@@ -57,8 +57,6 @@ ListOperations* RemoveOperation(ListOperations* list, int id);
 ListOperations* GetMeanPathJob(ListJob* list, char* id);
 void WriteOpFile(char filename[], ListOperations* job);
 
-void WriteFile(char filename[], ListOperations* job);
-
 /**/
 Job* CreateJob(char* id);
 ListJob* CreateNodeListJob(Job* job);
@@ -67,3 +65,6 @@ ListJob* SearchJob(ListJob* start, char* id);
 ListJob* InsertOperationJob(ListJob* list, Operation* op, char* id);
 void ShowJobOperations(ListJob* list, char* id);
 void WriteJobsFile(char filename[], ListJob* lst);
+ListJob* ReadJobsFile(char filename[], ListJob* list);
+ListJob* RemoveJob(ListJob* list, char* id);
+ListJob* RemoveOperationJob(ListJob* list, int id, char* jobId);
