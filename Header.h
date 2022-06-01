@@ -54,3 +54,4 @@ ListJob* InsertJobListJob(ListJob* list, Job* job);
 ListJob* SearchJob(ListJob* start, char* id);
 ListJob* InsertOperationJob(ListJob* list, Operation* op, char* id);
 void ShowJobOperations(ListJob* list, char* id);
+void WriteJobsFile(char filename[], ListJob* lst);

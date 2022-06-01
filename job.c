@@ -96,3 +96,40 @@ void ShowJobOperations(ListJob* list, char* id)
 	}
 }
 
+void WriteJobsFile(char filename[], ListJob* lst)
+{
+	ListJob* aux = lst;
+	ListOperations* temp = NULL;
+
+	FILE* file;
+	file = fopen(filename, "wb");
+	if (file == NULL)
+	{
+		fprintf(stderr, "\nCouldn't Open File'\n");
+		exit(1);
+	}
+
+	// writing all the nodes of the linked list to the file
+	while (aux != NULL)
+	{ 
+		temp = aux->operations;
+		
+		while (temp != NULL)
+		{
+			fprintf(file, "%s,%d,%d,%d\n",aux->job.id, temp->operation.id, temp->operation.machine, temp->operation.duration);
+			temp = temp->next;
+		}
+		aux = aux->next;
+	}
+	// Final status feedback
+	if (fwrite != 0)
+	{
+		printf("List stored successfully\n");
+	}
+	else
+	{
+		printf("Error While Writing\n");
+	}
+
+	fclose(file);
+}

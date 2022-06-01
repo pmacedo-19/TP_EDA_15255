@@ -97,9 +97,9 @@ int main() {
 	*	Gets the longest duration path with "GetLongPathJob"
 	*	Shows the resulting list with "ShowOperations"
 	*/
-	op = GetLongPathJob(listjob, "pr1.2");
-	ShowOperations(op);
-	WriteOpFile("Output.txt", op);
+	//op = GetLongPathJob(listjob, "pr1.2");
+	//ShowOperations(op);
+	//WriteOpFile("Output.txt", op);
 
 	/** Test of the mean for each operation in a job
 	*	Gets the mean for each operation in a selected job
@@ -117,6 +117,10 @@ int main() {
 	//ShowOperations(op);
 
 
+	/** Test of writing list of jobs to file
+	*	Writes all the elements from the struct "ListJob" to the output file
+	*/
+	//WriteJobsFile("JobOutput.txt", listjob);
 	
 	getchar();
 
