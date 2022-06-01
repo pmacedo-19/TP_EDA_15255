@@ -1,7 +1,7 @@
 
 #include "Header.h"
 
-/**
+/*!
 * @brief Creates a new job
 * @param [in]	id		ID of the job to be created
 */
@@ -12,7 +12,7 @@ Job* CreateJob(char* id)
 	return aux;
 }
 
-/**
+/*!
 * @brief Creates a new Node to add a job into the list of jobs
 * @param [in]	job		Job to be added to the list
 */
@@ -25,7 +25,7 @@ ListJob* CreateNodeListJob(Job* job)
 	return new;
 }
 
-/**
+/*!
 * @brief Inserts a job in the list of jobs
 * @param [in]	list	Pointer to the list of Jobs
 * @param [in]	job		Job to be added to the list
@@ -44,7 +44,7 @@ ListJob* InsertJobListJob(ListJob* list, Job* job)
 	return list;
 }
 
-/**
+/*!
 * @brief Searches for a job with the ID given
 * @param [in]	list	Pointer to the list of Jobs
 * @param [in]	id		Identification of the job
@@ -60,7 +60,7 @@ ListJob* SearchJob(ListJob* start, char* id)
 	return NULL;
 }
 
-/**
+/*!
 * @brief Inserts one operation in the list of operations belonging to the job with the ID given
 * @param [in]	list	Pointer to the list of Jobs
 * @param [in]	op		Operation to be added to the list
@@ -79,7 +79,7 @@ ListJob* InsertOperationJob(ListJob* list, Operation* op, char* id)
 	return list;
 }
 
-/**
+/*!
 * @brief Shows all the operations present in one job identified by his ID
 * @param [in]	list	Pointer to the list of Jobs
 * @param [in]	id		Identification of the operation
@@ -96,6 +96,11 @@ void ShowJobOperations(ListJob* list, char* id)
 	}
 }
 
+/*!
+* @brief Writes all the jobs in listjob to an output file
+* @param [in]	filename[]	Name of the file to write the output
+* @param [in]	lst			List containing the jobs to write
+*/
 void WriteJobsFile(char filename[], ListJob* lst)
 {
 	ListJob* aux = lst;

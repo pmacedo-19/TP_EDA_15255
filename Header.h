@@ -11,22 +11,34 @@
 #include <locale.h>
 #include <stdbool.h>
 
+/*!
+* @brief	Struct that defines an operation
+*/
 typedef struct Operation {
 	int id;
 	int machine;
 	int duration;
 }Operation;
 
+/*!
+* @brief	Struct that defines a List of Operations
+*/
 typedef struct ListOperations {
 	struct Operation operation;
 	struct ListOperations* next;
 }ListOperations;
 
+/*!
+* @brief	Struct that defines a Job
+*/
 typedef struct Job
 {
 	char id[6];
 }Job;
 
+/*!
+* @brief	Struct that defines a List of Jobs
+*/
 typedef struct ListJob {
 	struct Job job;
 	struct ListOperations* operations;

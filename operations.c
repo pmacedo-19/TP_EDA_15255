@@ -1,7 +1,7 @@
 
 #include "Header.h"
 
-/**
+/*!
 * @brief Creates a new element of the Operation struct
 * @param [in]	id		Identification of the operation
 * @param [in]	machine		Machine used in the operation
@@ -16,7 +16,7 @@ Operation* CreateOperation(int id, int machine, int duration)
 	return aux;
 }
 
-/**
+/*!
 * @brief Creates a new Node in the Operations list to add a new operation
 * @param [in]	op	Operation to be inserted in the list
 */
@@ -30,7 +30,7 @@ ListOperations* CreateNodeListOperations(Operation* op)
 	return new;
 }
 
-/**
+/*!
 * @brief Inserts one operation in a Operations list
 * @param [in]	list	Pointer to the Operations list
 * @param [in]	op	Operation to be inserted in the list
@@ -49,7 +49,7 @@ ListOperations* InsertListOperations(ListOperations* list, Operation* op)
 	return list;
 }
 
-/**
+/*!
 * @brief Gets the path with least duration from one job
 * @param [in]	list	Pointer to the job list
 * @param [in]	id	Job ID to avaluate
@@ -110,7 +110,7 @@ ListOperations* GetShortPathJob( ListJob* list, char* id)
 	return lOp;
 }
 
-/**
+/*!
 * @brief Gets the path with most duration from one job
 * @param [in]	list	Pointer to the job list
 * @param [in]	id	Job ID to avaluate
@@ -170,7 +170,7 @@ ListOperations* GetLongPathJob(ListJob* list, char* id)
 	}
 	return lOp;
 }
-/**
+/*!
 * @brief Shows all the elements from the operations list 
 * @param [in]	h	Pointer to the list
 */
@@ -185,7 +185,7 @@ void ShowOperations(ListOperations* h)
 }
 
 
-/**
+/*!
 * @brief Removes Operation from Job with the Operation ID
 * @param [in] list	pointer to list start
 * @param [in] id	ID of the Operation to be removed
@@ -219,7 +219,12 @@ ListOperations* RemoveOperation(ListOperations* list, int id)
 	return list;
 }
 
-
+/*!
+* @brief Get the mean time for each operation in a Job
+* @param [in] list	Pointer to list start
+* @param [in] id	ID of the Job to get a mean
+* @return	Pointer to the list
+*/
 ListOperations* GetMeanPathJob(ListJob* list, char* id)
 {
 	int i = 7;
@@ -275,10 +280,14 @@ ListOperations* GetMeanPathJob(ListJob* list, char* id)
 	return lOp;
 }
 
-
-void WriteOpFile(char filename[], ListOperations* job)
+/*!
+* @brief Writes all the Operations from a ListOperations to a file
+* @param [in] list			Pointer to list start
+* @param [in] filename[]	Name of the file to write
+*/
+void WriteOpFile(char filename[], ListOperations* list)
 {
-	ListOperations* temp = job;
+	ListOperations* temp = list;
 
 	FILE* file;
 	file = fopen(filename, "wb");

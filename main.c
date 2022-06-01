@@ -85,7 +85,7 @@ int main() {
 
 	ListOperations* op = NULL; // Aux list for the duration tests
 
-	/** Test of the path with least duration
+	/*! Test of the path with least duration
 	*	Gets the shortest duration path with "GetShortPathJob"
 	*	Shows the resulting list with "ShowOperations"
 	*/
@@ -93,7 +93,7 @@ int main() {
 	//ShowOperations(op);
 	
 
-	/** Test of the path with longest duration
+	/*! Test of the path with longest duration
 	*	Gets the longest duration path with "GetLongPathJob"
 	*	Shows the resulting list with "ShowOperations"
 	*/
@@ -101,14 +101,14 @@ int main() {
 	//ShowOperations(op);
 	//WriteOpFile("Output.txt", op);
 
-	/** Test of the mean for each operation in a job
+	/*! Test of the mean for each operation in a job
 	*	Gets the mean for each operation in a selected job
 	*	Shows the resulting list with "ShowOperations" --- Discard machine id (not relevant in this case)
 	*/
 	//op = GetMeanPathJob(listjob, "pr1.2");
 	//ShowOperations(op);
 
-	/** Test of the removal of an operation
+	/*! Test of the removal of an operation
 	*	Removes the operation by giving the identifier "RemoveOperation"
 	*	Shows the resulting list with "ShowOperations"
 	*/
@@ -117,7 +117,7 @@ int main() {
 	//ShowOperations(op);
 
 
-	/** Test of writing list of jobs to file
+	/*! Test of writing list of jobs to file
 	*	Writes all the elements from the struct "ListJob" to the output file
 	*/
 	//WriteJobsFile("JobOutput.txt", listjob);
